@@ -9,18 +9,48 @@
 </head>
 
 <body>
+
+    <!-- NAVBAR HERE -->
     <div id="navbar">
         <div id="left"><i id="icon" class="fas fa-shield-alt fa-3x"></i></div>
         <div id="right"><button id="login">Login</button><button id="register">Register</button></div>
     </div>
-    <div id="overlay" style="visibility: hidden; opacity: 0;">
-        <div id="overlay-container">
-            <h2 id="overlay-title">This is a login screen that should popup when login button is clicked!</h2>
+
+
+    <!-- LOGIN FORM HERE -->
+    <div id="overlaylogin" style="visibility: hidden; opacity: 0; position: fixed;">
+        <div class="overlay-container">
+            <h2 id="overlay-title">Podaj emial i hasło, aby się zalogować:</h2>
+            <form action="login" id="loginform">
+                <input type="email" name="email" class="email" placeholder="email">
+                <input type="password" name="pass" class="pass" placeholder="hasło">
+                <div id="buttons">
+                    <input type="submit" value="Zaloguj" id="loginbutton">
+                <button class="cancel" type="button">Anuluj</button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- REGISTER FORM HERE -->
+    <div id="overlayregister" style="visibility: hidden; opacity: 0; position: fixed;">
+        <div class="overlay-container">
+            <h2 class="overlay-title">Podaj emial i hasło, aby się zarejestrować:</h2>
+            <form action="register" id="registerform">
+                <input type="email" name="email" class="email" placeholder="przykład@email.com">
+                <input type="password" name="pass" class="pass" placeholder="jakieś hasło">
+                <div id="buttons">
+                    <input type="submit" value="Zarejestruj się" id="registerbutton">
+                <button class="cancel" type="button">Anuluj</button>
+
+                </div>
+            </form>
         </div>
     </div>
 
 </body>
-<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
 
 <script src="https://kit.fontawesome.com/dacada4f7d.js"></script>
 <link rel="stylesheet" href="style.css">
