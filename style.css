@@ -1,11 +1,65 @@
-html,
-body {
+* {
+    font-family: 'Open Sans', sans-serif;
+
+}
+html, body {
     height: 100%;
     margin: 0;
+
 }
+#overlay{
+    height: 92%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+
+}
+
+
+#overlay-container{
+    width: 25%;
+    height: 60%;
+    background-color: gray;
+    text-align: center;
+    color: #d5dce8;
+    font-size: 0.8rem;
+    padding: 5%;
+
+}
+
 
 #navbar {
     background-color: #c2c7d1;
+    display: flex;
+    justify-content: space-between;
     height: 8%;
-    padding: auto;
+}
+
+#right * {
+    border: none;
+    background-color: #c2c7d1;
+    height: 100%;
+    width: 100px;
+    transition: all 0.2s;
+    outline: none;
+
+}
+
+#right *:hover {
+    background-color: #8994a5;
+}
+
+
+
+#icon {
+    height: 48px;
+}
+
+#left {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

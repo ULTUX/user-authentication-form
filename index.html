@@ -10,10 +10,18 @@
 
 <body>
     <div id="navbar">
-        <i id="icon" class="fas fa-shield-alt fa-3x"></i>
+        <div id="left"><i id="icon" class="fas fa-shield-alt fa-3x"></i></div>
+        <div id="right"><button id="login">Login</button><button id="register">Register</button></div>
+    </div>
+    <div id="overlay" style="visibility: hidden; opacity: 0;">
+        <div id="overlay-container">
+            <h2 id="overlay-title">This is a login screen that should popup when login button is clicked!</h2>
+        </div>
     </div>
 
 </body>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
 <script src="https://kit.fontawesome.com/dacada4f7d.js"></script>
 <link rel="stylesheet" href="style.css">
 <script src="app.js"></script>
